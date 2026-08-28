@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ContactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Candra:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Contact Us - Academia Nest</title>
+</head>
+<body>
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="Home.html">
+                    <div class="logo">
+                        <img src="academia.png" alt="Academia Nest Logo">
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Signup.html">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-heading">Contact Us</h2>
+            <p class="section-subheading text-muted">Have questions? We're here to help you!</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name." />
+                            <div class="invalid-feedback text-start">Please enter your name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address." />
+                            <div class="invalid-feedback text-start">Please enter a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter your message."></textarea>
+                            <div class="invalid-feedback text-start">Please enter your message.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subscribe" class="form-label">Subscribe for Email Notifications</label>
+                            <input type="checkbox" id="subscribe" name="subscribe" />
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <p class="mb-3"><i class="fa fa-map-marker"></i> H11 Islamabad</p>
+                        <p class="mb-3"><i class="fa fa-phone"></i> 03001234567</p>
+                        <p class="mb-3"><i class="fa fa-envelope"></i> academianest@info.com</p>
+                    </div>
+                    <div id="map" style="height: 400px; margin-top: 20px; margin-bottom: 50px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.0422573193464!2d73.0126125754577!3d33.656066938546005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95659f89c887%3A0xd53213b21131f99a!2sFAST%20NUCES%20School%20of%20Management%20Sciences!5e0!3m2!1sen!2s!4v1700870052176!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="Signup.html">Sign Up</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Courses.html">Courses</a></li>
+                        <li><a href="Aboutus.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="FAQs.html">FAQ</a></li>
+                        <li><a href="PrivPol.html">Privacy Policy</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
